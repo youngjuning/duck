@@ -18,10 +18,10 @@ import duck from "https://deno.land/x/duck/mod.ts";
 
 const app = new Application();
 const router = new Router();
-const koda = await duck(new Router());
+const gaga = await duck(new Router());
 
-app.use(koda.routes());
-app.use(koda.allowedMethods());
+app.use(gaga.routes());
+app.use(gaga.allowedMethods());
 
 console.log(`🦕 oak server running at http://127.0.0.1:1998/ 🦕`);
 
