@@ -10,7 +10,9 @@ export async function addControllers(router: any, dir: string = "controllers") {
       router[method](`/${api}`, controller.default);
     }
   }
-  router.get("/checkHealth", (ctx: any) => {
+  router.get("/", (ctx: any) => {
+    ctx.response.body = "Hello Duck!";
+  }).get("/checkHealth", (ctx: any) => {
     ctx.response.body = "The server is health. Just do it.";
   });
   return router;
