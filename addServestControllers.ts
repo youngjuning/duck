@@ -3,7 +3,7 @@ export default async function addServestControllers(router: any, dir: string) {
   router.get("/", async (ctx: any) => {
     await ctx.respond({
       status: 200,
-      body: "Hello Duck!",
+      body: "Hello Servest!",
     });
   })
   router.get("/checkHealth", async(ctx: any) => {

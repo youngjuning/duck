@@ -1,7 +1,7 @@
 export default async function addAbcControllers(router: any, dir: string) {
   const realPath = Deno.realPathSync(dir);
   router.get("/", (ctx: any) => {
-    return "Hello Duck!";
+    return "hello Abc!";
   }).get("/checkHealth", (ctx: any) => {
     return "The server is health. Just do it.";
   });

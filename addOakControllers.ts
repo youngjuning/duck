@@ -1,7 +1,7 @@
 export default async function addOakControllers(router: any, dir: string) {
   const realPath = Deno.realPathSync(dir);
   router.get("/", (ctx: any) => {
-    ctx.response.body = "Hello Duck!";
+    ctx.response.body = "Hello Oak!";
   }).get("/checkHealth", (ctx: any) => {
     ctx.response.body = "The server is health. Just do it.";
   });
