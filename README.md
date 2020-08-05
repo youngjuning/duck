@@ -4,7 +4,7 @@
 
 A simple controller scanner and router register for deno!
 
-## Api
+## API
 
 > duck(router, controller_dir: string = 'controllers')
 
@@ -17,10 +17,11 @@ export { Application, Context, Router } from "https://deno.land/x/oak/mod.ts";
 import duck from "https://deno.land/x/duck/mod.ts";
 
 const app = new Application();
-const router = await duck(new Router());
+const router = new Router();
+const koda = await duck(new Router());
 
-app.use(router.routes());
-app.use(router.allowedMethods());
+app.use(koda.routes());
+app.use(koda.allowedMethods());
 
 console.log(`🦕 oak server running at http://127.0.0.1:1998/ 🦕`);
 
