@@ -1,10 +1,12 @@
 # duck
 
-simple dynamic router register for deno
+<img src="https://i.loli.net/2020/08/05/XBzRTIeoSnQc5vH.png" width="150"/>
+
+A simple controller scanner and router register for deno!
 
 ## Api
 
-> duck(router, controller_dir?:string)
+> duck(router, controller_dir: string = 'controllers')
 
 ## Usage
 
